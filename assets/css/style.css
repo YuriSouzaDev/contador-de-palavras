@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/words.jpg"), rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  margin: 0 auto;
+  width: calc(100vw - 40px);
+}
+
+.main h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.main p {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.form textarea {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  resize: vertical;
+}
+
+.resp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background: #fff;
+  color: #000;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.resp span {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .main h1 {
+    font-size: 2rem;
+  }
+  .form label {
+    font-size: 1rem;
+  }
+  .resp {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
